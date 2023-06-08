@@ -7,9 +7,8 @@ for (let i = 0; i < li.length; i++) {
 const blocks = Array.from(document.querySelectorAll('.block'));
 
 function filterColor(event) {
-    for (let i = 0; i < blocks.length; i++) {        
-        blocks[i].classList.remove('hide');
-    }
+
+    blocks.forEach(item => item.classList.remove('hide'));
 
     if(event.target.classList.contains('red-text')) {
         for (let i = 0; i < blocks.length; i++) {
